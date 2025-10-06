@@ -25,9 +25,11 @@ El proyecto aborda limpieza textual, tokenización, fine-tuning y evaluación es
 - 🐍 Python  
 - 📓 Jupyter  
 - 🤗 Transformers (Hugging Face)  
-- 🔥 PyTorch  
+- 🔥 Word2Vec  
 - 🧩 Scikit-learn  
 - 📊 Matplotlib / Seaborn / WordCloud
+- 📦 **[Ver dependencias del proyecto](requirements.txt)**
+
 
 **Principales módulos usados:**
 ```python
