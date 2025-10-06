@@ -34,3 +34,21 @@ El proyecto aborda limpieza textual, tokenización, fine-tuning y evaluación es
 from transformers import BertTokenizerFast, BertForSequenceClassification, Trainer, TrainingArguments
 from sklearn.metrics import classification_report, confusion_matrix
 from datasets import Dataset
+
+```
+---
+
+## 🧩 Reproducibilidad
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/Koke-Oliva/nlp-notas-clinicas-bert.git
+   cd nlp-notas-clinicas-bert
+
+pip install -r requirements.txt
+
+nlp-notas-clinicas-bert.ipynb
+
+
+
+
