@@ -44,11 +44,13 @@ from datasets import Dataset
    ```bash
    git clone https://github.com/Koke-Oliva/nlp-notas-clinicas-bert.git
    cd nlp-notas-clinicas-bert
-
-pip install -r requirements.txt
-
-nlp-notas-clinicas-bert.ipynb
-
+   ```
+   ```bash
+   pip install -r requirements.txt
+   ``` 
+   ```bash
+   nlp-notas-clinicas-bert.ipynb
+   ```
 
 
 
