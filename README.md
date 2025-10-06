@@ -35,8 +35,14 @@ El proyecto aborda limpieza textual, tokenización, fine-tuning y evaluación es
 
 **Principales módulos usados:**
 ```python
-from transformers import BertTokenizerFast, BertForSequenceClassification, Trainer, TrainingArguments
-from sklearn.metrics import classification_report, confusion_matrix
+import os, re, random
+import numpy as np, pandas as pd, tensorflow as tf, spacy
+from gensim.models import Word2Vec
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report, confusion_matrix, precision_recall_fscore_support
+from transformers import AutoTokenizer, TFAutoModelForSequenceClassification
 from datasets import Dataset
 
 ```
