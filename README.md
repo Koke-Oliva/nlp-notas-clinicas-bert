@@ -40,7 +40,7 @@ from datasets import Dataset
 
 ## 🧩 Reproducibilidad
 
-1. **Clonar el repositorio**
+   **Clonar el repositorio**
    ```bash
    git clone https://github.com/Koke-Oliva/nlp-notas-clinicas-bert.git
    cd nlp-notas-clinicas-bert
@@ -52,5 +52,6 @@ from datasets import Dataset
    nlp-notas-clinicas-bert.ipynb
    ```
 
+> 💡 Esta sección permite reproducir los resultados del proyecto, asegurando consistencia y transparencia en el flujo de trabajo.
 
 
