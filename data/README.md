@@ -1,21 +1,24 @@
-# Dataset
+# Dataset sintético
 
-`dataset_clinico_simulado_200.csv` contiene **200 notas clínicas simuladas** utilizadas en la evaluación académica del Módulo 8 de la Especialización en Machine Learning (IT Academy / Kibernum).
+`dataset_clinico_simulado_200.csv` contiene 200 registros sintéticos usados en la evaluación formativa del Módulo 8.
 
-## Columnas
+Columnas:
 
-- `texto_clinico`: nota clínica sintética.
-- `edad`: edad simulada.
-- `genero`: género simulado (F/M).
-- `afeccion`: afección asociada.
-- `gravedad`: etiqueta objetivo (`leve`, `moderado`, `severo`).
+- `texto_clinico`
+- `edad`
+- `genero`
+- `afeccion`
+- `gravedad`
 
-## Advertencias metodológicas
+## Uso en este repositorio
 
-Este corpus es **sintético** y pequeño. No contiene historias clínicas reales ni datos identificatorios de pacientes. El análisis del proyecto demuestra que existen plantillas lingüísticas repetidas y variables que actúan como proxies muy fuertes de la etiqueta, por lo que los resultados obtenidos con particiones aleatorias pueden sobreestimar la generalización.
+El archivo se publica para reproducibilidad del proyecto. No contiene nombres, identificadores personales ni historias clínicas reales.
 
-La versión profesionalizada del notebook audita explícitamente estos shortcuts y utiliza una evaluación con familias de plantillas no vistas.
+La versión profesionalizada del análisis detecta que el dataset incluye:
 
-## Reutilización
+- textos exactos repetidos;
+- nueve familias de plantillas sintéticas;
+- asociación determinista entre familia de plantilla y clase;
+- asociación determinista entre `afeccion` y `gravedad`.
 
-El archivo proviene del material complementario utilizado para la evaluación académica. La licencia MIT del código del repositorio **no debe interpretarse automáticamente como licencia del dataset**.
+Por ese motivo, las métricas perfectas de una partición aleatoria no se interpretan como evidencia de generalización clínica.
