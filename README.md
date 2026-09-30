@@ -62,7 +62,7 @@ a:
 6. **TF-IDF + Multinomial Naive Bayes**.
 7. **Word2Vec + Random Forest**.
 8. **BETO** (`dccuchile/bert-base-spanish-wwm-uncased`).
-9. CV aleatoria estratificada vs. `StratifiedGroupKFold` por plantilla.
+9. CV aleatoria estratificada vs. tres folds agrupados por plantilla, con una familia completa de cada clase retenida por fold.
 10. Holdout robusto compartido entre modelos.
 11. Train / validation / test separados para BETO.
 12. Matrices de confusión y curvas Precision–Recall.
